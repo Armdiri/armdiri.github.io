@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Panda"
 description              : "Panda website"
-url                      : "https://armdiri.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://armdiri.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/bio-photo.png"
