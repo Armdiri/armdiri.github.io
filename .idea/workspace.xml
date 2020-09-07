@@ -26,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2020-09-07-s3imageserver-post.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="641">
-                <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+              <first_editor relative-caret-position="116">
+                <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
               </first_editor>
               <second_editor />
             </state>
@@ -166,7 +166,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599479504981" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599479571723" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -203,12 +203,12 @@
       <updated>1598949707735</updated>
       <workItem from="1598949708937" duration="5537000" />
       <workItem from="1599200879706" duration="397000" />
-      <workItem from="1599476011790" duration="3399000" />
+      <workItem from="1599476011790" duration="3563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9333000" />
+    <option name="totallyTimeSpent" value="9497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3712" y="63" width="1920" height="1006" extended-state="0" />
@@ -477,8 +477,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2020-09-07-s3imageserver-post.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="641">
-            <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <first_editor relative-caret-position="116">
+            <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
           </first_editor>
           <second_editor />
         </state>
