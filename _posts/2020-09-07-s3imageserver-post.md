@@ -36,12 +36,15 @@ sitemap :
 
 ## 비용
 
-1. CloudFront + S3
+1. CloudFront + S3  
 ![이미지2](/assets/images/s3imageserver/2020-09-07-02.png)
+~~~~~~~~
+월 데이터 전송 2.4TB 비용 = $40.6 예상 + S3저장비용
+~~~~~~~~
 
-> 월 데이터 전송 2.4TB 비용 = $40.6 예상 + S3저장비용
-
-2. Nginx + S3
+2. Nginx + S3  
 ![이미지3](/assets/images/s3imageserver/2020-09-07-03.png)
 
-> 월 데이터 전송 2.4TB 비용 + S3저장비용 = 최대 $10 예상
+~~~~~~~~
+월 데이터 전송 2.4TB 비용 + S3저장비용 = 최대 $10 예상
+~~~~~~~~
