@@ -1,7 +1,7 @@
 ---
-title:  "Classic ASP 소스수정없이 S3 사용하기 using FileGateway"
-description: "Classic ASP 소스수정없이 S3 사용하기 using FileGateway"
-date: 2020-08-27 08:26:28 -0400
+title:  "S3를 이용한 이미지 서버 구축하기"
+description: "S3를 이용한 이미지 서버 구축하기"
+date: 2020-09-07 20:26:28 -0400
 categories: devlopment
 sitemap :
   changefreq : daily
