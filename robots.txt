@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://armdiri.github.io/sitemap.xml
+Sitemap: https://armdiri.github.io/sitemap.xml
