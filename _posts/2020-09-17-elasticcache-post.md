@@ -17,11 +17,11 @@ sitemap :
 * Session key 저장하면서 TTL 설정이 일부 안된걸로 파악
 
 ### 장애 
-![이미지1](/assets/images/s3imageserver/2020-09-17-01.png)  
-![이미지1](/assets/images/s3imageserver/2020-09-17-02.png)  
-![이미지1](/assets/images/s3imageserver/2020-09-17-03.png)  
-![이미지1](/assets/images/s3imageserver/2020-09-17-04.png)  
-![이미지1](/assets/images/s3imageserver/2020-09-17-05.png)  
+![이미지1](/assets/images/elasticcache/2020-09-17-01.png)  
+![이미지1](/assets/images/elasticcache/2020-09-17-02.png)  
+![이미지1](/assets/images/elasticcache/2020-09-17-03.png)  
+![이미지1](/assets/images/elasticcache/2020-09-17-04.png)  
+![이미지1](/assets/images/elasticcache/2020-09-17-05.png)  
 
 | | 3월4일 (장애시점) | 2월28일 (최대치) | 비고 |
 |:---|:---:|:---:|:---:|
