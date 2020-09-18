@@ -79,3 +79,9 @@ A : replica 구조에서 Slave node (승격후)에 쓰기시도시 OOM 발생할
 
 ## Test
 
+*Reference*
+* https://docs.aws.amazon.com/ko_kr/AmazonElastiCache/latest/red-ug/Replication.Redis.Groups.html
+* https://docs.aws.amazon.com/ko_kr/AmazonElastiCache/latest/red-ug/Replication.Redis-RedisCluster.html
+* https://aws.amazon.com/ko/premiumsupport/knowledge-center/oom-command-not-allowed-redis/
+* https://docs.aws.amazon.com/ko_kr/AmazonElastiCache/latest/red-ug/scaling-redis-cluster-mode-enabled.html
+* https://docs.aws.amazon.com/ko_kr/AmazonElastiCache/latest/red-ug/Strategies.html
