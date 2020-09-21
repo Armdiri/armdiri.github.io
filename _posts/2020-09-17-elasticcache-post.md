@@ -6,6 +6,7 @@ categories: devlopment
 sitemap :
   changefreq : daily
   priority : 1.0
+cover: /assets/images/elasticcache/2020-09-17-01.png
 ---
 
 > 안녕하세요. DX혁신부문 학원솔루션개발팀에 이병철입니다. :)  
@@ -37,6 +38,7 @@ sitemap :
 
 > * 메모리가 여유가 있는데 왜 시스템이 멈출까?  
 > * 2월28일에 최대로 사용했는데 그때는 문제가 왜 없었지?   
+> 
 > 위에 두가지 궁금증이 발생했습니다. 그래서 AWS Tam 에게 도움을 요청했고 다음과 같은 답변을 받았습니다. 
 
 ## AWS Q&A
@@ -64,7 +66,7 @@ A : replica 구조에서 Slave node (승격후)에 쓰기시도시 OOM 발생할
 
 | 옵션 | 설명 | 비고 |
 |:---:|:---|:---:|
-| volatile-lfu |가장 적게 액세스한 키부터 시작해 만료가 설정된 키 하나를 제거하여 공간 확보|기본|
+| volatile-lfu |가장 적게 액세스한 키부터 시작해 만료가 <br> 설정된 키 하나를 제거하여 공간 확보|기본|
 | allkeys-lru | 최근 사용한 키를 먼저 제거하여 공간 확보 | |
 | allkeys-random | 무작위로 키를 제거하여 공간 확보 | 권장 |
 | volatile-random | 만료가 설정된 무작위 키를 제거하여 공간 확보 | 권장 |
