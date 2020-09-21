@@ -3,10 +3,13 @@ title:  "ElasticCache(Redis) 제대로 알고 사용하자"
 description: "ElasticCache(Redis) 제대로 알고 사용하자"
 date: 2020-09-17 15:26:28 -0400
 categories: devlopment
-sitemap :
-  changefreq : daily
-  priority : 1.0
+sitemap:
+  changefreq: daily
+  priority: 1.0
 cover: /assets/images/elasticcache/2020-09-17-01.png
+header:
+    overlay_image: /assets/images/elasticcache/2020-09-17-01.png
+    caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
 > 안녕하세요. DX혁신부문 학원솔루션개발팀에 이병철입니다. :)  
