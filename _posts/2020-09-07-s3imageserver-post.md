@@ -11,6 +11,7 @@ sitemap :
   priority : 1.0
 header:
     overlay_image: /assets/images/elasticcache/2020-09-17-bg.png
+    teaser: /assets/images/s3imageserver/2020-09-07-01.png
 ---
 
 >안녕하세요. DX혁신부문 학원솔루션개발팀에 이병철입니다. :)  

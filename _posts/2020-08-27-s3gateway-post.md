@@ -11,6 +11,7 @@ sitemap :
   priority : 1.0
 header:
     overlay_image: /assets/images/elasticcache/2020-09-17-bg.png
+    teaser: /assets/images/1.png
 ---
 
 >안녕하세요.  
