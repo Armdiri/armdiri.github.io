@@ -7,6 +7,8 @@ thumbnail: "/assets/images/1.png"
 sitemap :
   changefreq : daily
   priority : 1.0
+header:
+    overlay_image: /assets/images/elasticcache/2020-09-17-bg.png
 ---
 
 >안녕하세요.  
