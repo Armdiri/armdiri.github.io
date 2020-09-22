@@ -7,10 +7,9 @@ toc: true
 toc_sticky: true
 toc_label: "페이지 주요 목차"
 sitemap:
-  changefreq: daily
-  priority: 1.0
+    changefreq: daily
+    priority: 1.0
 header:
-    overlay_image: /assets/images/elasticcache/2020-09-17-bg.png
     teaser: /assets/images/elasticcache/2020-09-17-01.png
 ---
 
