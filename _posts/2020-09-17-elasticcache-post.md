@@ -3,6 +3,9 @@ title:  "ElasticCache(Redis) 제대로 알고 사용하자"
 description: "ElasticCache(Redis) 제대로 알고 사용하자"
 date: 2020-09-17 15:26:28 -0400
 categories: devlopment
+toc: true
+toc_sticky: true
+toc_label: "페이지 주요 목차"
 sitemap:
   changefreq: daily
   priority: 1.0

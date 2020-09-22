@@ -3,7 +3,9 @@ title:  "Classic ASP 소스수정없이 S3 사용하기 using FileGateway"
 description: "Classic ASP 소스수정없이 S3 사용하기 using FileGateway"
 date: 2020-08-27 08:26:28 -0400
 categories: devlopment
-thumbnail: "/assets/images/1.png"
+toc: true
+toc_sticky: true
+toc_label: "페이지 주요 목차"
 sitemap :
   changefreq : daily
   priority : 1.0
