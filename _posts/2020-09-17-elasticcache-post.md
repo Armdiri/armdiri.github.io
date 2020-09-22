@@ -8,7 +8,6 @@ sitemap:
   priority: 1.0
 header:
     overlay_image: /assets/images/elasticcache/2020-09-17-01.png
-    caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
 > 안녕하세요. DX혁신부문 학원솔루션개발팀에 이병철입니다. :)  
