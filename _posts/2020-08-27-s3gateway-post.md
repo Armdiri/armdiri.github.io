@@ -11,9 +11,6 @@ header:
     overlay_image: /assets/images/elasticcache/2020-09-17-bg.png
 ---
 
-
-
-
 >안녕하세요.  
 >TechLab에서 문제은행 고도화 프로젝트를 담당하고 있는 이병철 입니다.  
 >최근에 AS-IS 시스템 일부를 On-Premise에서  클라우드(AWS)로 전환시키려고 프로젝트를 진행하고 있습니다.  
