@@ -204,5 +204,6 @@ AWS 파일게이트웨이 온프레미스 환경사용자를 위해서 만들어
 - [AWS FileGateWay 성능지침](https:/docs.aws.amazon.com/ko_kr/storagegateway/latest/userguide/Performance.html)
 
 ~~~
-!Warning : 아래글은 ETOOS TechBlog에서 발취된 자료로 본 개발자가 직접 회사블러그에 글을 작성한것만 포스팅하였습니다. 
+!Warning : 작성자가 직접 ETOOS TechBlog에 작성한 게시물 내용입니다. 
+           게시물의 저작권은 ETOOS에 있습니다.
 ~~~
