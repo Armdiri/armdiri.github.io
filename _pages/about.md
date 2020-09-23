@@ -1,8 +1,10 @@
 ---
-title: "이 블로그 설명서"
+title: "개발자에 대하"
 permalink: /about/
 layout: single
 ---
 
-## armdiri.github.io 블로그
+## 한줄코딩개발자
+
+## 주말요린이
 
