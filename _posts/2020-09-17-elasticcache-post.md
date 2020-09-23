@@ -171,3 +171,7 @@ ElastiCache에서는 할당된 예약 메모리 공간을 활용하여 요청되
 * https://aws.amazon.com/ko/premiumsupport/knowledge-center/oom-command-not-allowed-redis/
 * https://docs.aws.amazon.com/ko_kr/AmazonElastiCache/latest/red-ug/scaling-redis-cluster-mode-enabled.html
 * https://docs.aws.amazon.com/ko_kr/AmazonElastiCache/latest/red-ug/Strategies.html
+
+~~~
+!Warning : 아래글은 ETOOS TechBlog에서 발취된 자료로 본 개발자가 직접 회사블러그에 글을 작성한것만 포스팅하였습니다. 
+~~~
