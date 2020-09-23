@@ -11,4 +11,6 @@ sitemap:
     priority: 1.0
 header:
     teaser: /assets/images/elasticcache/2020-09-17-01.png
+tags:
+    - devops
 ---

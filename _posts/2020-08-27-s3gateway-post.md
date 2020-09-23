@@ -5,7 +5,9 @@ date: 2020-08-27 08:26:28 -0400
 categories: 
     - devlopment
 tags:
-    - S3, FileGateway, AWS
+    - s3
+    - filegateway
+    - aws
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"

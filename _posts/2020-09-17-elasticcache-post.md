@@ -11,6 +11,10 @@ sitemap:
     priority: 1.0
 header:
     teaser: /assets/images/elasticcache/2020-09-17-01.png
+tags:
+    - redis
+    - elastic cache
+    - aws
 ---
 
 > 안녕하세요. DX혁신부문 학원솔루션개발팀에 이병철입니다. :)  

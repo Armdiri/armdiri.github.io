@@ -6,7 +6,11 @@ categories: devlopment
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
-
+tags:
+    - cloudfront
+    - s3
+    - aws
+    - image server
 sitemap :
     changefreq : daily
     priority : 1.0
