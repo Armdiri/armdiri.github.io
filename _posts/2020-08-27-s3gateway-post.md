@@ -8,6 +8,7 @@ tags:
     - s3
     - filegateway
     - aws
+    - etoos techblog
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"

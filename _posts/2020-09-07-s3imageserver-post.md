@@ -11,6 +11,7 @@ tags:
     - s3
     - aws
     - image server
+    - etoos techblog
 sitemap :
     changefreq : daily
     priority : 1.0
