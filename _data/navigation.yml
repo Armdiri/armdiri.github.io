@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "Home"
+  - title: "main"
     url: /
-  - title: "Post"
+  - title: "post"
     url: /year-archive/
-  - title: "Tag"
+  - title: "tags"
     url: /tags/
-  - title: "Category"
+  - title: "category"
     url: /category-archive/
-  - title: "About"
+  - title: "about"
     url: /about/
