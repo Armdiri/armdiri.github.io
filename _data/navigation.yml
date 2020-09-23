@@ -2,7 +2,7 @@
 main:
   - title: "포스트"
     url: /year-archive/
-  - title: "테그"
+  - title: "태그"
     url: /tags/
   - title: "카테고리"
     url: /categories/
