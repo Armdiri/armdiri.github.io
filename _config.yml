@@ -127,13 +127,13 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://facebook.com/armdiri.lee"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/armdiri"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      url: "https://github.com/armdiri"
+      #url: "https://github.com/armdiri"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
