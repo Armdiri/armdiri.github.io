@@ -2,7 +2,7 @@
 title:  "ElasticCache(Redis) 제대로 알고 사용하자"
 description: "ElasticCache(Redis) 제대로 알고 사용하자"
 date: 2020-09-17 15:26:28 -0400
-categories: devlopment
+categories: ETOOS TechBlog
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
