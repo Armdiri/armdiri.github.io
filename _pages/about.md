@@ -1,5 +1,5 @@
 ---
-title: "개발자에 대하"
+title: "개발자에 대하여"
 permalink: /about/
 layout: single
 ---
