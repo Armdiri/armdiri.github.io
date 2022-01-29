@@ -13,17 +13,11 @@ P
  _posts/2020-09-22-devops-post.md,f/8/f80adaedbc54c50fc74c6161d99884274d572db1
 V
 &_posts/2020-09-17-elasticcache-post.md,2/e/2e1423254c028424032dcd379bd4bad607dcc3a9
-O
-_posts/2021-03-01-monitering.md,3/5/35ad1be0bd82fbfb35c74b81557b1735482e31e0
 ;
 sitemap.xml,9/9/991b411cc600215e9528c61790563f0521666950
 E
 armdiri.github.io.iml,0/0/00d0129db545d9e1c433927f69b3597cee644feb
 8
 feed.xml,2/2/22950ffc308261850157fa2318b4413a862cca26
-A
-_data/ui-text.yml,7/a/7ad80b7fff7f8d498a5a1fc441a39e522ab0ec3d
-D
-_data/navigation.yml,2/b/2be422aeee711340aaa5e49cef05cf00d2df950a
 J
 _includes/head/custom.html,e/e/eed7d824664f7d7a5708f7174dd11fe423f190e9
