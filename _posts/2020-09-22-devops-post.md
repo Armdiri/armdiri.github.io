@@ -2,7 +2,7 @@
 title:  "우리팀에 크고작은 변화들"
 description: "우리팀에 크고작은 변화를 소개합니다."
 date: 2020-09-17 15:26:28 -0400
-categories: ETOOS TechBlog
+categories: TechBlog
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"

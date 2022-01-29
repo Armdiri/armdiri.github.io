@@ -2,7 +2,7 @@
 title:  "S3를 이용한 이미지 서버 구축하기"
 description: "S3를 이용한 이미지 서버 구축하기"
 date: 2020-09-07 20:26:28 -0400
-categories: ETOOS TechBlog
+categories: TechBlog
 toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
