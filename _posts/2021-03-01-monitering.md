@@ -7,10 +7,10 @@ toc: true
 toc_sticky: true
 toc_label: "Table of Contents"
 sitemap:
-changefreq: daily
-priority: 1.0
+    changefreq: daily
+    priority: 1.0
 header:
-teaser: 
+    teaser: 
 tags:
 - grafana
 - loki
