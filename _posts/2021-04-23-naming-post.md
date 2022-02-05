@@ -12,7 +12,7 @@ priority: 1.0
 header:
 teaser:
 tags:
-- 네이밍컨벤션
+- 네이밍 컨벤션
 - naming convention
 ---
 
