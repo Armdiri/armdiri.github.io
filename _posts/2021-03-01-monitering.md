@@ -1,5 +1,5 @@
 ---
-title:  "Grafana+Loki+Promtail을 이용한 장애모니터링"
+title:  "장애 모니터링 만들기 with Grafana,Promtail,Loki"
 description: "이전 장애모니터링에 문제점을 해소하기 위해 자체적으로 모니터링 툴을 활용하여 만들어 보았습니다"
 date: 2021-03-01 15:26:28 -0400
 categories: TechBlog
@@ -15,7 +15,6 @@ tags:
 - grafana
 - loki
 - promtail
-- etoos techblog
 ---
 
 이전에 사용화된 모니터링툴들을 보고 있자면 이걸로 장애인지하는데 문제는 없겠지만 장애 포인트가 어디인지를 명확하게 찾아내는데 이슈가 있어 보였습니다. 
