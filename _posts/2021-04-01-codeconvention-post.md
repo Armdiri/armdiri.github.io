@@ -352,4 +352,328 @@ boolean value = true && false;
 int monthSalary = (20 * daySalary) + incentive;
 ```
 
+
 ### 빈줄
+* Import Organization 과 빈줄 사용 준수
+```java
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+/* (빈 줄 위치) */
+import org.apache.commons.lang.StringUtils;
+/* (빈 줄 위치) */
+import com.corp.bds.admin.build.request.bo.RequestScriptBO;
+import com.corp.bds.admin.build.request.bo.RequestBO;
+import com.corp.bds.admin.build.request.bo.RequestBO;
+import com.corp.bds.admin.build.request.bo.ServerListBO;
+```
+* 패키지 선언 후 빈줄 사용준수
+```java
+package com.corp.bds.admin.build.request.action;
+/* (빈 줄 위치) 패키지 선언 후 다음 줄에 빈 줄을 삽입한다. */
+import java.text.ParseException;
+```
+* 클래스, 인터페이스, 열거형, 어노테이션 선언 후 빈줄 사용 지양
+```java
+public class RequestDetailAction extends BdsAdminBaseAction {
+    private CodeBO codeBO;
+    /* (빈 줄 위치) 클래스 선언 후 다음 줄에 빈 줄을 삽입하지 않는다. */
+    private SVNManagerBO svnManagerBO;
+    ...
+}
+```
+* 메소드 선언 후 빈줄 사용
+```java
+public CodeBO getCodeBO() {
+    return codeBO;
+}
+/* (빈 줄 위치) 메소드 선언 후 다음 줄에 빈 줄을 삽입한다. */
+public void setCodeBO(CodeBO codeBO) {
+    this.codeBO = codeBO;
+}
+/* (빈 줄 위치) 메소드 선언 후 다음 줄에 빈 줄을 삽입한다. */
+public SVNManagerBO getSvnManagerBO() {
+    return svnManagerBO;
+}
+```
+* 맴버변수 선언 후 빈줄 사용 지양
+* 명령문간 빈줄 사용 지양
+  명령문간에는 빈줄을 사용하지 않는다. 단, 소스길이가 길어지는 경우에는 명령문을 구분하기 위해 사용한다.
+```java
+public DataSource getDataSource() {
+    DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
+   
+     dataSourceBuilder.driverClassName("org.h2.Driver");
+     dataSourceBuilder.url("jdbc:h2:mem:testdb");
+     dataSourceBuilder.username("domino");
+     dataSourceBuilder.password("password");
+   
+     return dataSourceBuilder.build();
+}
+```
+* 명령문, 제어문간 빈줄 사용
+```java
+String pocket = null;
+/* (빈 줄 위치) 명령문과 제어문 사이에는 빈 줄을 삽입한다. */
+if (pocket != null) {
+    return true;
+} else {
+    return false;
+}
+```
+* 멤버변수 논리 그룹간 빈줄 사용
+```java
+private MemberRequest memberRequest;
+private MemberDetailRequest memberDetailRequest;
+/* (빈 줄 위치) 멤버변수 그룹 사이에는 빈 줄을 삽입한다. */
+private List<Order> orders;
+```
+
+### 새줄
+* 어노테이션 선언
+```java
+@RestController
+@Deprecated
+public class LectureRestController {
+    ...
+}
+```
+* 기타 예제
+```java
+// if else 나쁜 예
+class Example {
+    void foo2() {
+        if (true) {
+            return;
+        }
+        else if (false) {
+            return;
+        }
+        else {
+            return;
+        }
+    }
+}
+
+// if else 좋은 예
+class Example {
+    void foo2() {
+        if (true) {
+            return;
+        }
+         
+        if (true) {
+            return;
+        } else if (false) {
+            return;
+        } else {
+            return;
+        }
+    }
+}
+
+// try catch 나쁜 예
+class Example {
+    void bar() {
+        try {
+            ...
+        }
+        catch (Exception e) {
+            ...
+        }
+        finally {
+            ...
+        }
+    }
+}
+
+// try catch 좋은 예
+class Example {
+    void bar() {
+        try {
+            ...
+        } catch (Exception e) {
+            ...
+        } finally {
+            ...
+        }
+    }
+}
+
+// do, while 나쁜 예
+class Example {
+    void bar() {
+        do
+        {
+			...
+        } while (true);
+    }
+}
+
+// do, while 좋은 예
+class Example {
+    void bar() {
+        do {
+			...
+        } while (true);
+    }
+}
+
+// 한줄 명령문 나쁜 예
+void foo(int state) {
+    if (true) return;
+    ...
+}
+
+// 한줄 명령문 좋은 예
+void foo(int state) {
+    if (true) {
+        return;
+    } else if (false) {
+        return;
+    } else { 
+        return;
+    }
+}
+
+// 나쁜 예
+String name = "kim"; String job = "engineer";
+
+// 좋은 예
+String name = "robert";
+String job = "iron man";
+```
+
+### 줄 바꿈
+#### 한줄 초과시 줄 바꿈
+* 변수, 파라미터 등의 경우에는 콤마(,) 다음에 줄 바꿈을 한다.
+* 연산식의 경우에는 연산자 전에 줄바꿈을 한다.
+* 시작 소괄호의 경우에는 시작 소괄호 전에 줄바꿈을 한다.
+* 줄 바꿈 후에는 가독성을 위해 자동 들여쓰기를 한다.
+```java
+// 제어문의 들여쓰기 깊이는 제어문 키워드(if, for...)부터
+if (buildRequest.getRequestDetail().getRank() != null
+    && buildRequest.getRequestDetail().getRank() != 0) {
+    ...
+}
+
+// 선언문의 들여쓰기 깊이는 선언문 시작점부터
+public class RankBuildRetryRequestChainHandler extends
+      WritableRequestChainHandler {
+  ...
+}
+
+// 표현식의 들여쓰기 깊이는 표현식의 시작점부터
+int sum = 100 + 200 + 300 + 400
+    + 500 + 600 + 700 + 800;
+
+// 메소드 호출의 들여쓰기 깊이는 문장 시작점부터
+Other.bar(100, 200, 300, 400,
+    500, 600, 700, 800, 900);
+```
+#### 클래스 선언 줄바꿈
+* 키워드 extends, implements 다음에 줄바꿈을 한다. 줄바꿈 후 2탭(8자리)만큼 들여쓰기를 한다.
+* 클래스 이름이 최대 줄기이를 초과하는 경우에도 클래스 이름의 중간에서 줄바꿈을 하지 않는다.
+* 확장한 경우 부모 클래스 이름이 최대 줄 길이를 초과하는 경우에도 부모 클래스 이름의 중간에서 줄바꿈을 하지 않는다.
+```java
+public class RankBuildRetryRequestChainHandler extends
+        WritableRequestChainHandler {
+    ...
+}
+
+public class RankBuildRetryRequestChainHandler extends
+        LooooooooongNameClass {
+    ...
+}
+
+public class RankBuildRetryRequestChainHandler implements
+        ChianHandler, LoooongNameInterface {
+    ...
+}
+```
+#### 생성자, 메소드 선언 줄바꿈
+* 생성자와 메소드의 파라미터가 최대 줄 길이를 초과하는 경우에는 콤마(,) 다음에 줄 바꿈을 한다. 줄 바꿈 후 2 탭(8 자리)만큼 들여쓰기를 한다.
+* throws 키워드를 사용하는 경우 첫 번째 예외처리는 줄 바꿈을 하지 않으며, 두 번째 예외처리부터 줄 바꿈을 한다.
+```java
+class Example {
+    Example(int arg1, int arg2,
+        int arg3, int arg4,
+        int arg5, int arg6) {
+        this();
+	  }
+
+    Example() {
+    }
+}
+
+class Example {
+    Example() throws FirstException,
+        SecondException,
+        ThirdException {
+            return Other.doSomething();
+        }
+}
+```
+#### 메소드 호출 줄 바꿈 준수
+* 생성자와 메소드의 호출 인수가 최대 줄 길이를 초과하는 경우에는 콤마(,) 다음에 줄 바꿈을 한다. 줄 바꿈 후 상위 레벨의 깊이에서 1 탭(4 자리)만큼 들여쓰기를 한다.
+* Qualified 호출(연속 호출)은 최대 길이를 초과하는 경우에도 줄 바꿈을 하지 않는다.
+```java
+class Example {
+    void foo() {
+        Other.bar(100, 200, 300, 400,
+            500, 600, 700, 800, 900);
+    }
+}
+
+// 최대 길이를 초과했으나 qualified 호출이므로 줄 바꿈을 하지 않는다.
+deployRequestDetailId.setBuildDeployNumber(sourceRequestDetail.getRelationalBuildDeployNumber());
+```
+#### 표현식 줄 바꿈 준수
+* 연산자 전에 줄 바꿈을 한다. 줄 바꿈 후 상위 레벨의 깊이에서 1 탭(4 자리)만큼 들여쓰기를 한다.
+* 배열을 초기화하는 경우에는 콤마(,) 다음에 줄 바꿈을 한다. 줄 바꿈 후 상위 레벨의 깊이에서 1 탭(4 자리)만큼 들여쓰기를 한다.
+* 변수를 할당하는 경우에는 줄 바꿈을 하지 않는다. 단, 변수에 문자열을 할당하는 경우에는 한 줄 초과 시 + 연산자로 문자열을 나누어 연산 또는 할당하고 줄 바꿈을 한다. 또는 StringBuffer 를 사용하여 길이가 긴 문자열을 처리한다.
+```java
+class Example **extends** AnotherClass {
+    int foo() {
+        int sum = 100 + 200 + 300 + 400
+          + 500 + 600 + 700 + 800;
+        int product = 1 * 2 * 3 * 4 * 5
+          * 6 * 7 * 8 * 9 * 10;
+        boolean val = true && false
+          && true && false && true;
+ 
+        return product / sum;
+    }
+}
+
+class Example extends AnotherClass {
+    int Example(boolean Argument) {
+        return argument ? 100000
+            : 200000;
+    }
+}
+
+class Example {
+    int[] array = {1, 2, 3, 4, 5, 6,
+        7, 8, 9, 10, 11, 12};
+}
+
+private String bookName = “LongLongLongLogLongLongLongLogLongLongLongLogAgoStory”;
+private String bookName = “LongLongLongLogLongLongLongLogLong”
+    + “LongLongLogAgoStory”;
+```
+#### 제어문 줄 바꿈 준수
+* 제어문은 키워드를 제외하고 대부분 표현식과 명령문으로 구성된다. 따라서 **D. 메소드 호출 줄 바꿈 준수, E. 표현식 줄 바꿈 준수, F. 제어문 줄 바꿈 준수**의 줄 바꿈 규칙을 따른다.
+```java
+if (buildRequest.getRequestDetail().getRank() != null
+    && buildRequest.getRequestDetail().getRank() != 0) {
+   
+result = requestDetailDAO.updateDailyBuildRequestDetailRank(
+    buildRequest.getRequestDetail().getId(),
+    buildRequest.getRequestDetail().getExecEndYyyymmdd()) > 0;
+}
+```
+#### 한 줄 최대 길이 준수
+* Sun Microsystems 의 코딩 컨벤션은 최대 글자 수를 80 자로 정의하고 있으며, 터미널과 vi 편집기의 적정 글자 수 역시 80 자이므로 일반적인 코딩 컨벤션에서는 한 줄의 최대 길이를 80 자로 두고 있다. 하지만 고해상도 모니터의 보급과 개발환경의 변화로 인해 이투스의 코딩 컨벤션에서는 한 줄의 최대 길이를 **120** 자로 둔다.
+
