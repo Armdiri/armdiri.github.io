@@ -101,3 +101,111 @@ public class Book()
 * Persistence - <model_name>Dao, <model_name>Repository, <model_name>Mapper
 * Domain model - <model_name>Model
 * Entity - <model_name>
+
+#### 도메인 모델 이름 형식 준수
+도메인 모델은 엔티티(Entity) 이름과 유사하게 작성한다.
+```java
+// 엔티티 이름
+MEMBER_STATUS
+
+// 클래스 이름
+public class MemberStatus{}
+```
+
+#### Service, BO, DAO, Repository 클래스 이름 형식 준수
+Service, BO, DAO, Repository 등의 클래스를 인터페이스와 구현부로 구분하는 경우에는 구현부 클래스의 이름을 <model_name>Impl 로 한다. I 와 같은 접두어는 사용하지 않는다.
+```java
+public interface MemberDAO{} // 인터페이스 선언
+
+// 나쁜 예
+public class iMemberDAOImplements implements MemberDAO {} // 인터페이스 구현
+
+// 좋은 예
+public class MemberDAOImpl implements MemberDAO {} // 인터페이스 구현
+```
+
+#### 접두사/접미사 사용준수
+* 클래스를 역할, 기능, 성격으로 분리가 가능한 경우와 클래스의 크기가 큰 경우에는 접두사/접미사를 사용하여 레이어별로 클래스를 분리한다.
+* 접두사/접미사는 복합 단어가 아닌 단일 단어를 사용하여 작성한다.
+```java
+public void ImageUploader {};
+```
+
+### 메소드 이름
+코딩 컨벤션에서는 CRUD 작업과 관련된 메소드 네이밍을 표준으로 두며 그 외 다른 목적을 가진 메소드 네임은 용도에 맞되 일관적인 네이밍으로 한다. ex) uploadImage() / validateModel() / increaseStock / joinMember()
+
+#### 동사 사용 준수
+```java
+// 나쁜 예
+public void payment() {}
+ 
+// 좋은 예
+public void pay() {}
+public void run() {}
+public void delete() {}
+```
+
+#### 카멜표기법 준수
+복합어 이름은 첫번째 단어를 소문자로 작성하고 두번째 이상의 단어 첫 글자를 대문자로 작성하여 단어를 구분한다.
+```java
+// 나쁜 예
+public int SumStock() {}
+
+// 좋은 에
+public boolean removeSalary() {}
+```
+
+#### Java Beans 이름 형식 준수
+Accessor/Mutator(Getter/Setter) 메소드는 get+맴버변수 이름, set+맴버변수 이름 형식으로 작성 한다.
+단, 데이터 타입이 Boolean 인경우에는 get+맴버변수 이름, set+맴버변수이름 형식대신 is+맴버변수 이름형식을 사용한다.
+```java
+// 나쁜 예
+public void setBook(boolean book)
+// 좋은 예
+public void setBook(Book book)
+public boolean isBook(Book book)
+```
+
+#### 레이어별 구조화된 클래스 이름
+* Presentation / Business
+  [Create] add<ModelName> , create<ModelName>
+  [Read] get<ModelName>, get<ModelName>s, find<ModelName>, find<ModelName>s
+  [Update] update<ModelName>, modify<ModelName>
+  [Delete] remove<ModelName>, delete<ModelName>
+* Persistence
+  [Create] insert<ModelName>
+  [Read] select<ModelName>
+  [Update] update<ModelName>
+  [Delete]  delete<ModelName>
+
+#### 쿼리 성격 준수 - DAO
+DAO 메소드 이름은 쿼리의 성격에 따라 insert, select, update, delete 구문과 매핑하여 사용
+단, JPA와 QueryDSL과 같은 경우 위 표준에 따르지 않고 각 라이브러리 룰을 따른다.
+
+### 변수이름
+#### 카멜표기법 준수
+복합어 이름은 첫번째 단어를 소문자로 작성하고 두번째 이상의 단어 첫글자를 대문자로 작성한다.
+```java
+// 나쁜 예
+private String GuestName;
+private int booknumber;
+private boolean Enabled;
+
+// 좋은 예
+private String guestName;
+private int bookNumber;
+private boolean enabled;
+```
+
+#### 간결성, 명료성 준수
+변수 이름은 한글자 이상으로 사용 의도를 충분히 알수 있을 만큼 간결하고 명확하게 작성한다. 단, 스코프 내에서의 역활을 충분히 알아볼수 있다면 짧은 변수명도 허용한다.
+
+#### 임시 변수 외 한글자 이름 사용지양
+임시 변수는 한글자 이름을 사용한다.
+
+### 상수 이름
+상수는 대문자로 작성하고 복합어의 경우 언더스코어를 사용
+```java
+public final int STATIC_CONSTANT = 100;
+public final String CODE_NAME = 'POSTAL_CODE';
+```
