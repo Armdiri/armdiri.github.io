@@ -209,3 +209,198 @@ private boolean enabled;
 public final int STATIC_CONSTANT = 100;
 public final String CODE_NAME = 'POSTAL_CODE';
 ```
+
+## 예시
+### Controller
+#### Request
+```java
+public class MemberJoinRequest extends CommonJoinRequest {
+
+    @ApiModelProperty(required = true, value = "회원 아이디", example = "etoos123", position = 10)
+    @NotNull
+    @Pattern(regexp = Regex.MEMBER_ID)
+    @Size(min = 1, max = 40)
+    private String memberId;
+
+    @ApiModelProperty(required = true, value = "비밀번호", example = "qwer1234!@#$", position = 20)
+    @Pattern(regexp = Regex.MEMBER_PASSWORD)
+    @NotNull
+    private String password;
+
+    @ApiModelProperty(value = "회원 이름", example = "이투스", position = 30)
+    private String memberName;
+
+    @ApiModelProperty(value = "이름", example = "투스")
+    @JsonIgnore
+    private String firstName;
+
+    ...
+}
+```
+
+#### Response
+```java
+public class AddressResponse {
+    @ApiModelProperty(required = true, notes = "도로명 주소", example = "남부순환로 2547")
+    private String roadAddress;
+
+    @ApiModelProperty(required = true, notes = "도로명 주소의 참고항목", example = "이투스 교육")
+    private String roadAddressExtra;
+
+    @ApiModelProperty(required = true, notes = "지번 주소", example = "서초동")
+    private String jibunAddress;
+
+    @ApiModelProperty(required = true, notes = "관련 지번", example = "123번지")
+    private String relatedJibun;
+
+    @ApiModelProperty(required = true, notes = "우편번호", example = "19283")
+    private String zipCode;
+
+    ...
+}
+```
+
+#### ViewModel
+```java
+public class LectureViewModel {
+
+    @ApiModelProperty(required = true, value = "강의명")
+    private String lectureName;
+
+    @ApiModelProperty(required = true, value = "강의 번호")
+    private int lectureNo;
+
+    ...
+}
+```
+
+#### Api Response
+```java
+public class MemberApiResponse {
+
+    @ApiModelProperty(value = "수강 목록")
+    private final List<Lecture> lectures;
+
+    @Getter
+    @Builder
+    public static class Lecture {
+
+        @ApiModelProperty
+        private final int lectureNo;
+
+        @ApiModelProperty("강의명")
+        private final String lectureName;
+
+        @ApiModelProperty("강의 홈페이지 URI")
+        private final String lectureUri;
+    }
+}
+```
+
+### Business Layer
+#### Utils
+* 공통으로 사용하는 유틸리티 클래스의 suffix
+* 단수형이 아닌 복수형으로 한다
+
+#### Properties
+```java
+// property file
+application.properties
+
+// property class
+@ConfigurationProperties(prefix = "aws.s3")
+@Getter
+@Setter
+public class AwsS3Properties {
+
+    private String endpointUrl;
+    private String accesskey;
+    private String secretKey;
+    private String bucketName;
+    private String region;
+}
+```
+
+#### Code
+```java
+public enum AdminErrorCode implements ErrorCode {
+    DUPLICATED_AUTHORITY_GROUP_NAME("A0001"),
+    DUPLICATED_ID("A0002"),
+    NOT_MATCHED_PASSWORD("A0003"),
+    INVALID_ADMIN_STATUS_TO_REGISTER("A0004")
+
+    private final String code;
+    ...
+}
+```
+
+#### Type
+```java
+public enum ProviderType implements GenericEnum<String>, DisplayEnum {
+    NAVER("naver", "common.provider.type.naver", 1, true, "naver"),
+    KAKAO("kakao", "common.provider.type.kakao", 2, true, "kakao"),
+
+    ...
+}
+```
+
+#### Constants
+```java
+public class MessageConstants {
+
+    public static final String ERROR_PREFIX = "error.common.";
+    public static final String MESSAGE_PREFIX = "message.common.";
+    ...
+}
+```
+
+#### Configuration
+```java
+public class MessageConstants {
+
+    public static final String ERROR_PREFIX = "error.common.";
+    public static final String MESSAGE_PREFIX = "message.common.";
+    ...
+}
+```
+
+### Persistence Layer
+#### Entity
+```java
+// domain + suffix
+LectureEntity
+OrderEntity
+MemberEntity
+
+// domain + use + suffix
+LecturePeriodEntity
+MemberAuthEntity
+```
+
+#### Model
+```java
+public class MemberModel {}
+public class LectureModel {}
+public class OrderModel {}
+```
+
+#### Dao
+```java
+@Mapper
+public interface CouponDao {
+  int insertCouponCode(CouponCode couponCode);
+}
+
+@Mapper
+public interface LectureDao {
+  List<Lecture> selectLectureWithSubject(SubjectCode subjectCode);
+}
+```
+
+#### Repository
+```java
+public interface LectureRepository extends JpaRepository<Lecture, Serializable> {
+    Optional<Lecture> findByLectureNo(int lectureNo);
+    ...
+}
+```
