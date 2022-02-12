@@ -59,3 +59,5 @@ X
 (_posts/2021-04-01-codeconvention-post.md,a/d/ad5f341c56312d44341bd1aa1a032caaca1f7748
 ;
 _config.yml,c/d/cd089ae45ce870c45e434019e8f1ed4f066cd425
+P
+ _posts/2021-04-23-naming-post.md,f/1/f134e2540bafb3cdb06f168d6512c98a193dff94
