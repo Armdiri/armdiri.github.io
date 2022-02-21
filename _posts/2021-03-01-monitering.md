@@ -53,7 +53,7 @@ tags:
 
 ## 어떻게 만들까?
 이제 장애프로그램을 만들기 위한 아키텍처가 필요해 보입니다.  
-![이미지3](/assets/images/mn/mn_03.png)
+![이미지3](/assets/images/mn/mn_03.jpg)
 
 그라파나 / ELK Stack 두가지 솔루션을 가지고 고민을 했습니다.
 ![이미지4](/assets/images/mn/mn_4.png)
