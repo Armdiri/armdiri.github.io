@@ -1,5 +1,5 @@
 ---
-title:  "장애 모니터링 만들기 with Grafana,Promtail,Loki"
+title:  "장애 모니터링 만들기"
 description: "이전 장애모니터링에 문제점을 해소하기 위해 자체적으로 모니터링 툴을 활용하여 만들어 보았습니다"
 date: 2021-03-01 15:26:28 -0400
 categories: TechBlog
